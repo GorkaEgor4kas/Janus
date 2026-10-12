@@ -13,4 +13,4 @@ class AgentState(BaseModel):
     status: AgentStatus
     current_phase: str | None = None
     current_goal: str | None = None
-    step: int = 0
+    step: int = Field(default=0, ge=0)
