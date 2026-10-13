@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 class EventType(StrEnum):
     SESSION_CREATED = "session_created"
     SESSION_STARTED = "session_started"
-    SESSION_STOPED = "session_stopped"
+    SESSION_STOPPED = "session_stopped"
     SESSION_FINISHED = "session_finished"
 
     COMPONENT_READY = "component_ready"
@@ -18,7 +18,7 @@ class EventType(StrEnum):
     ACTION_EXECUTED = "action_executed"
     ACTION_RESULT_RECEIVED = "action_result_received"
 
-    GOAL_ACHIVED = "goal_achived"
+    GOAL_ACHIEVED = "goal_achieved"
     MAX_STEPS_REACHED = "max_steps_reached"
 
 

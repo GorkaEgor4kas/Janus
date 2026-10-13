@@ -1,5 +1,5 @@
 from pydantic import Field
-from src.janus.domain.agent_state import AgentState, AgentStatus
+from janus.domain.agent_state import AgentState, AgentStatus
 
 class RedState(AgentState):
     session_id: str

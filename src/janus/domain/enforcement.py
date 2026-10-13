@@ -7,7 +7,7 @@ class EnforcementResultType(StrEnum):
     BLOCKED = "blocked"
 
 class EnforcementResult(BaseModel):
-    enfrocement_id: str
+    enforcement_id: str
     action_id: str
     session_id: str
 

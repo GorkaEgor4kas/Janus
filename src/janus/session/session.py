@@ -17,8 +17,8 @@ class SessionConfig(BaseModel):
     red_config: dict = Field(default_factory=dict)
     blue_config: dict = Field(default_factory=dict)
     sandbox_profile: dict = Field(default_factory=dict)
-    attack_goal: str
-    max_steps: int 
+    attack_goal: str = ""
+    max_steps: int = Field(default=10, gt=0)
 
 class Session(BaseModel):
     session_id: str
