@@ -16,6 +16,7 @@ class EventType(StrEnum):
     ACTION_BLOCKED = "action_blocked"
     ACTION_ALLOWED = "action_allowed"
     ACTION_EXECUTED = "action_executed"
+    ACTION_EXECUTION_FAILED = "action_execution_failed"
     ACTION_RESULT_RECEIVED = "action_result_received"
 
     GOAL_ACHIEVED = "goal_achieved"
