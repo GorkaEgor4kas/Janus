@@ -11,6 +11,4 @@ class AgentStatus(StrEnum):
 class AgentState(BaseModel):
     agent_id: str
     status: AgentStatus
-    current_phase: str | None = None
-    current_goal: str | None = None
-    step: int = Field(default=0, ge=0)
+

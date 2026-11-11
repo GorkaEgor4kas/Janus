@@ -1,11 +1,16 @@
 from abc import ABC, abstractmethod
-from typing import Any, Dict, List, Optional
+
+from janus.domain.agent_state import AgentState, AgentStatus
 
 
 class Agent(ABC):
-    def __init__(self, agent_id: str):
-        self.agent_id = agent_id
-
+    def __init__(self, 
+                agent_id: str,
+                ) -> None:
+        self.state = AgentState(
+            agent_id=agent_id,
+            status=AgentStatus.IDLE,
+        )
 
     @abstractmethod
     def start(self) -> None:
@@ -14,9 +19,3 @@ class Agent(ABC):
     @abstractmethod
     def stop(self) -> None:
         ...
-
-    def handle(self, input: Any) -> Any:
-        ...
-
-
-    
