@@ -13,7 +13,7 @@ class SecurityGateway:
         self.event_bus = event_bus
         self._pending_sessions: dict[str, str] = {}
         self._decisions: dict[str, SecurityDecision] = {}
-        self.event_bus.subscribe(
+        self.event_bus.subscribe( 
             EventType.SECURITY_DECISION_MADE,
             self._on_security_decision,
         )
